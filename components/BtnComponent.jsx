@@ -22,17 +22,17 @@ export default function Button({
 
 
   const iconClass =
-  variant === 'success'
-    ? 'btn__icon btn__icon--success'
-    : variant === 'warning'
-    ? 'btn__icon btn__icon--warning'
-    : variant === 'primary'
-    ? 'btn__icon btn__icon--primary'
+     variant === 'primary'
+      ? 'btn__icon btn__icon--primary'
     : variant === 'secondary'
-    ? 'btn__icon btn__icon--secondary'
+      ? 'btn__icon btn__icon--secondary'
+    :  variant === 'success'
+      ? 'btn__icon btn__icon--success'
+    : variant === 'warning'
+      ? 'btn__icon btn__icon--warning'
     : '';
 
-    
+
   return (
     <>
       <button
