@@ -1,0 +1,38 @@
+/**************************************************************************/
+/* GENERAL CSS STYLES */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  // outline: 3px solid chartreuse !important;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Inter-Regular', sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.btn__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  margin-top: 10em;
+}
