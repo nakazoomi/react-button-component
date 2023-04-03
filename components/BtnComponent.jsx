@@ -20,6 +20,19 @@ export default function Button({
 
     const sizeClass = size === "small" ? "btn--small" : size === "large" ? "btn--large" : "";
 
+
+  const iconClass =
+  variant === 'success'
+    ? 'btn__icon btn__icon--success'
+    : variant === 'warning'
+    ? 'btn__icon btn__icon--warning'
+    : variant === 'primary'
+    ? 'btn__icon btn__icon--primary'
+    : variant === 'secondary'
+    ? 'btn__icon btn__icon--secondary'
+    : '';
+
+    
   return (
     <>
       <button
@@ -30,6 +43,7 @@ export default function Button({
         onClick={onClick}
         size={size}
       >
+        <span className={iconClass} />
         {children}
       </button>
     </>

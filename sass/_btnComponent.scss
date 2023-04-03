@@ -1,4 +1,8 @@
 .btn {
+  display: flex;
+justify-content: center;
+align-items: center;
+
     font-family: 'Inter-Medium';
     font-size: 1.6rem;
   
@@ -53,5 +57,35 @@
   
   .btn--large {
     font-size: 2.2rem;
+  }
+  
+
+  .btn__icon {
+    width: 1em;
+    height: 1em;
+    margin-right: 0.5em;
+  }
+  
+  .btn__icon--primary {
+    background-image: url(/icons/arrow-right.svg);
+    background-repeat: no-repeat;
+    filter: invert(1);
+  }
+  
+  .btn__icon--secondary {
+    background-image: url(/icons/arrow-right.svg);
+    background-repeat: no-repeat;
+  }
+  
+  .btn__icon--success {
+    background-image: url(/icons/arrow-right-01.svg);
+    background-repeat: no-repeat;
+    filter: invert(1);
+  }
+  
+  .btn__icon--warning {
+    background-image: url(/icons/close-icon_black.svg);
+    background-repeat: no-repeat;
+    filter: invert(1);
   }
   
